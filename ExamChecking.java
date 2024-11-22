@@ -11,7 +11,7 @@ public class ExamChecking extends Thread {
         for (int i = 0; i < maxIterations; i++) {
             synchronized (ExamChecking.class) {
                 if (examSheets <= 0) {
-                    System.out.println("There is no any exam sheet left! All papers were already checked!!!");
+                    System.out.println("There is no any exam sheet left All papers were already checked");
                     System.exit(0);
                 }
                 examSheets -= 50;
